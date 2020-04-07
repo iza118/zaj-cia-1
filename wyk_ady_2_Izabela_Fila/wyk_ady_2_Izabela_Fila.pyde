@@ -18,7 +18,7 @@ def draw():
     global natezenie
     
     natezenie = natezenie + 1
-    if natezenie == 1000:
+    if natezenie == 255: # wartość koloru nie może być większa niż 255, nie możęmy przewidzieć jak zachowa się rpogram jeżeli podamy wyższą... zachowa najwyższą możliwą/ zrobi modulo 255/wyrzuci błąd? Nawet różne  interpetery tego samego języka mogą to różnie traktować.
         natezenie = 0
     
     global szerokosc
@@ -39,3 +39,7 @@ def draw():
 
 def mousePressed():
     exit()
+    
+# ładnie ponazywane zmienne
+# zmiana koloru miała być z użyciem kolekcji, któe mieliście powtórzyć przy okazji tematu
+# 1,25p
